@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>SSL-Drop. Главная</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/jquery.js"></script>
+    <script src="js/select.js"></script>
+   
+   
+  </head>
+  <body>
+    <header>
+      <div class="page flex">
+        <a href="index.html" class="logo flex">
+          <span class="title">SSL-DROP</span>
+          <span class="subtitle">Лучшая партнерская сеть в Украине</span>
+        </a>
+        <div class="right flex">
+          <ul class="top-menu flex">
+            <li><a href="#goods" class="navigate">Товары</a></li>
+            <li><a href="#why-us" class="navigate">Почему мы</a></li>
+            <li>
+              <a href="#ask-a-question" class="navigate">Задать вопрос</a>
+            </li>
+          </ul>
+          <a href="#" class="cart flex">
+            <img src="images/cart.svg" />
+            <span>2</span>
+          </a>
+          <div class="cart-block">
+            <div class="bg-close"></div>
+            <div class="right-cart">
+              <div class="top flex">
+                <h3>Корзина</h3>
+                <a href="#" class="close flex"
+                  ><span>Закрыть</span><img src="images/close.png"
+                /></a>
+              </div>
+              <div class="content-empty flex" style="display: none">
+                <img class="empty-ico" src="images/cart-b.svg" />
+                <p>Ваша корзина на данный <br />момент пустая</p>
+                <a href="#goods" class="black-btn navigate" id="view-items"
+                  ><span>Смотреть товар</span></a
+                >
+              </div>
+             <div class="content-full">
+                <div class="items">
+                  <div class="item flex">
+                    <div class="left flex">
+                      <img src="images/item-2.png" />
+                      <a href="#" class="delete">Удалить</a>
+                    </div>
+                    <div class="right">
+                      <h3>Электронная сигарета Joyetech VAAL 1500 Puffs 5%</h3>
+                      <select class="turnintodropdown tastes">
+                        <option>Малина</option>
+                        <option>Банан</option>
+                        <option>Клубника</option>
+                        <option>Вишня</option>
+                        <option>Малина</option>
+                      </select>
+                      <div class="bottom flex">
+                        <div class="counter flex">
+                          <button
+                            type="button"
+                            class="but counterBut dec"
+                          ></button>
+                          <input
+                            type="text"
+                            class="field fieldCount"
+                            value="1"
+                            data-min="1"
+                            data-max="99"
+                          />
+                          <button
+                            type="button"
+                            class="but counterBut inc"
+                          ></button>
+                        </div>
+                        <div class="price">230 грн.</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item flex">
+                    <div class="left flex">
+                      <img src="images/item-3.png" />
+                      <a href="#" class="delete">Удалить</a>
+                    </div>
+                    <div class="right">
+                      <h3>Электронная сигарета Puff Bar Plus Disposable</h3>
+                      <select class="turnintodropdown tastes">
+                        <option>Банан</option>
+                        <option>Банан</option>
+                        <option>Клубника</option>
+                        <option>Вишня</option>
+                        <option>Малина</option>
+                      </select>
+                      <div class="bottom flex">
+                        <div class="counter flex">
+                          <button
+                            type="button"
+                            class="but counterBut dec"
+                          ></button>
+                          <input
+                            type="text"
+                            class="field fieldCount"
+                            value="1"
+                            data-min="1"
+                            data-max="99"
+                          />
+                          <button
+                            type="button"
+                            class="but counterBut inc"
+                          ></button>
+                        </div>
+                        <div class="price">549 грн.</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="total">
+                  <div class="ttop flex">
+                    <h3>Итого:</h3>
+                    <div class="price">779 грн.</div>
+                  </div>
+                  <p>Бесплатная доставка  <br /> на сумму от 1500 грн.</p>
+                  <a href="checkout.html" class="black-btn flex">
+                    <span>Оформить заказ</span>
+                    <img class="status" src="images/arrow.png" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+        <div class="page">
+            <div class="head-block flex rel">
+                <div class="left flex">
+                    <div class="imp-text flex">
+                        <img src="images/star-s.png" />
+                        
+                        <!-- текущая дата -->
+                        <span id="carrentDate"></span>
+                        
+                    </div>
+                    <h1>Лучшие цены <br />на электронные сигареты!</h1>
+                    <a href="#goods" class="black-btn flex navigate">
+                        <span>Смотреть товар</span>
+                        <img class="status" src="images/arrow.png" />
+                    </a>
+                </div>
+                <img class="img-cigarettes" src="images/product.png" />
+                
+                <!-- бегущая строка -->
+                <div class="producers flex">
+                <ul class="marquee">
+                    <li class="item">Elf</li>
+                    <li class="item">Joyetech</li>
+                    <li class="item">Puff Bar Plus</li>
+                    <li class="item">HQ</li>
+                </ul>
+           </div>
+                <img class="text-circle" src="images/text-circle.png" />
+        </div>
+        <div class="items" id="goods">
+          <h2>Качественный товар <br />по доступной цене</h2>
+          <ul class="flex">
+            <li>
+              <div class="border flex">
+                <div class="sale flex"><span>Sale</span></div>
+                <div
+                  class="main-img"
+                  style="background-image: url('images/item-1.png')"
+                ></div>
+                <h3>Одноразовая pod-система Elf Bar 1500 Disposable</h3>
+                <div class="price red">250 грн.</div>
+                <div class="old-price through">300 грн.</div>
+                <select class="turnintodropdown tastes">
+                  <option>Выбрать вкус</option>
+                  <option>Банан</option>
+                  <option>Клубника</option>
+                  <option>Вишня</option>
+                  <option>Малина</option>
+                </select>
+                <a href="#" class="black-btn flex" onclick="return false;">
+                  <span>Добавить</span>
+                  <img class="status" src="images/cart.png" />
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="border flex">
+                <div
+                  class="main-img"
+                  style="background-image: url('images/item-2.png')"
+                ></div>
+                <h3>Электронная сигарета Joyetech VAAL 1500 Puffs 5%</h3>
+                <div class="price">230 грн.</div>
+                <div class="old-price">230 грн.</div>
+                <select class="turnintodropdown tastes">
+                  <option>Выбрать вкус</option>
+                  <option>Банан</option>
+                  <option>Клубника</option>
+                  <option>Вишня</option>
+                  <option>Малина</option>
+                </select>
+                <a href="#" class="black-btn flex" onclick="return false;">
+                  <span>Добавлено</span>
+                  <img class="status" src="images/cart-done.png" />
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="border flex">
+                <div
+                  class="main-img"
+                  style="background-image: url('images/item-3.png')"
+                ></div>
+                <h3>Электронная сигарета Puff Bar Plus Disposable</h3>
+                <div class="price">549 грн.</div>
+                <div class="old-price">549 грн.</div>
+                <select class="turnintodropdown">
+                  <option>Выбрать вкус</option>
+                  <option>Банан</option>
+                  <option>Клубника</option>
+                  <option>Вишня</option>
+                  <option>Малина</option>
+                </select>
+                <a href="#" class="black-btn flex" onclick="return false;">
+                  <span>Добавить</span>
+                  <img class="status" src="images/cart.png" />
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="list flex" id="why-us">
+          <h2>3 причины <br />почему нам <br />стоит доверять</h2>
+          <ul>
+            <li class="flex">
+              <img src="images/star-1.png" /><span
+                >Лучшие цены на электронные сигареты</span
+              >
+            </li>
+            <li class="flex">
+              <img src="images/star-2.png" /><span
+                >Лучшая партнерская сеть в Украине</span
+              >
+            </li>
+            <li class="flex">
+              <img src="images/star-3.png" /><span
+                >Лучший товар для лучших партнеров</span
+              >
+            </li>
+          </ul>
+          <img class="text-circle" src="images/text-circle-2.png" />
+        </div>
+        <div class="contacts" id="ask-a-question">
+          <h2>Возникли вопросы? <br />Пишите нам!</h2>
+          <p>
+            Мы всегда стремимся подружиться с нашими клиентами и
+            <br />партнерами, пишите нам по любым вопросам.
+          </p>
+          <div class="soc flex">
+            <a href="#" class="black-btn tg flex">
+              <span>Написать в Telegram</span>
+              <img class="status" src="images/tg.png" />
+            </a>
+            <a href="#" class="black-btn vb flex">
+              <span>Написать в Viber</span>
+              <img class="status" src="images/vb.png" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="page flex">
+        <a href="#" class="top"></a>
+        <ul class="bottom-menu flex">
+          <li><a href="#why-us" class="navigate">Почему мы</a></li>
+          <li><a href="#goods" class="navigate">Товары</a></li>
+          <li><a href="#ask-a-question" class="navigate">Задать вопрос</a></li>
+        </ul>
+        <div class="logo">
+          <a href="index.html" class="flex">
+            <span class="title">SSL-DROP</span>
+            <span class="subtitle">Лучшая партнерская сеть в Украине</span>
+          </a>
+        </div>
+        <div class="write-to-us flex">
+          <span>Пишите нам:</span>
+          <a href="#" class="vb flex"><img src="images/vb-ico.png" /></a>
+          <a href="#" class="tg flex"><img src="images/tg-ico.png" /></a>
+        </div>
+      </div>
+    </footer>
+    <script>
+      $(document).ready(function () {
+        $("a.navigate").on("click", function (e) {
+          var anchor = $(this);
+          $("html, body")
+            .stop()
+            .animate(
+              {
+                scrollTop: $(anchor.attr("href")).offset().top,
+              },
+              777
+            );
+          e.preventDefault();
+          return false;
+        });
+
+        var btn = $(".top");
+
+        btn.on("click", function (e) {
+          e.preventDefault();
+          $("html, body").animate({ scrollTop: 0 }, "300");
+        });
+
+        $(".cart").click(function () {
+          $(".cart-block").show();
+          $("body").css({ "overflow-y": "hidden" });
+          return false;
+        });
+
+        $(".close").click(function () {
+          $(".cart-block").hide();
+          $("body").css({ "overflow-y": "visible" });
+          return false;
+        });
+
+        $(".bg-close").click(function () {
+          $(".cart-block").hide();
+          $("body").css({ "overflow-y": "visible" });
+          return false;
+        });
+
+        $("#view-items").click(function () {
+          $(".cart-block").hide();
+          $("body").css({ "overflow-y": "visible" });
+          return false;
+        });
+      });
+
+      function catalogItemCounter(field) {
+        var fieldCount = function (el) {
+          var min = el.data("min") || false,
+            max = el.data("max") || false,
+            dec = el.prev(".dec"),
+            inc = el.next(".inc");
+
+          function init(el) {
+            if (!el.attr("disabled")) {
+              dec.on("click", decrement);
+              inc.on("click", increment);
+            }
+
+            function decrement() {
+              var value = parseInt(el[0].value);
+              value--;
+
+              if (!min || value >= min) {
+                el[0].value = value;
+              }
+            }
+
+            function increment() {
+              var value = parseInt(el[0].value);
+
+              value++;
+
+              if (!max || value <= max) {
+                el[0].value = value++;
+              }
+            }
+          }
+
+          el.each(function () {
+            init($(this));
+          });
+        };
+
+        $(field).each(function () {
+          fieldCount($(this));
+        });
+      }
+
+      catalogItemCounter(".fieldCount");
+    </script>
+
+
+
+    <script src="./js/carrentDate.js"></script>
+    
+    
+  </body>
+</html>

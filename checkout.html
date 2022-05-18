@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>SSL-Drop. Оформление заказа</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/jquery.js"></script>
+    <script src="js/select.js"></script>
+    
+  </head>
+  <body>
+    <header>
+      <div class="page flex">
+        <a href="index.html" class="logo flex">
+          <span class="title">SSL-DROP</span>
+          <span class="subtitle">Лучшая партнерская сеть в Украине</span>
+        </a>
+        <div class="right flex">
+          <ul class="top-menu flex">
+            <li><a href="index.html#why-us" class="navigate">Почему мы</a></li>
+            <li><a href="index.html#goods" class="navigate">Товары</a></li>
+            <li>
+              <a href="index.html#ask-a-question" class="navigate"
+                >Задать вопрос</a
+              >
+            </li>
+          </ul>
+          <a href="#" class="cart flex">
+            <img src="images/cart.svg" />
+            <span>2</span>
+          </a>
+          <div class="cart-block">
+            <div class="bg-close"></div>
+            <div class="right-cart">
+              <div class="top flex">
+                <h3>Корзина</h3>
+                <a href="#" class="close flex"
+                  ><span>Закрыть</span><img src="images/close.png"
+                /></a>
+              </div>
+              <div class="content-empty flex" style="display: none">
+                <img class="empty-ico" src="images/cart-b.svg" />
+                <p>Ваша корзина на данный <br />момент пустая</p>
+                <a href="#goods" class="black-btn navigate" id="view-items"
+                  ><span>Смотреть товар</span></a
+                >
+              </div>
+              <div class="content-full">
+                <div class="items">
+                  <div class="item flex">
+                    <div class="left flex">
+                      <img src="images/item-2.png" />
+                      <a href="#" class="delete">Удалить</a>
+                    </div>
+                    <div class="right">
+                      <h3>Электронная сигарета Joyetech VAAL 1500 Puffs 5%</h3>
+                      <select class="turnintodropdown tastes">
+                        <option>Малина</option>
+                        <option>Банан</option>
+                        <option>Клубника</option>
+                        <option>Вишня</option>
+                        <option>Малина</option>
+                      </select>
+                      <div class="bottom flex">
+                        <div class="counter flex">
+                          <button
+                            type="button"
+                            class="but counterBut dec"
+                          ></button>
+                          <input
+                            type="text"
+                            class="field fieldCount"
+                            value="1"
+                            data-min="1"
+                            data-max="99"
+                          />
+                          <button
+                            type="button"
+                            class="but counterBut inc"
+                          ></button>
+                        </div>
+                        <div class="price">230 грн.</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item flex">
+                    <div class="left flex">
+                      <img src="images/item-3.png" />
+                      <a href="#" class="delete">Удалить</a>
+                    </div>
+                    <div class="right">
+                      <h3>Электронная сигарета Puff Bar Plus Disposable</h3>
+                      <select class="turnintodropdown tastes">
+                        <option>Банан</option>
+                        <option>Банан</option>
+                        <option>Клубника</option>
+                        <option>Вишня</option>
+                        <option>Малина</option>
+                      </select>
+                      <div class="bottom flex">
+                        <div class="counter flex">
+                          <button
+                            type="button"
+                            class="but counterBut dec"
+                          ></button>
+                          <input
+                            type="text"
+                            class="field fieldCount"
+                            value="1"
+                            data-min="1"
+                            data-max="99"
+                          />
+                          <button
+                            type="button"
+                            class="but counterBut inc"
+                          ></button>
+                        </div>
+                        <div class="price">549 грн.</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="total">
+                  <div class="ttop flex">
+                    <h3>Итого:</h3>
+                    <div class="price">779 грн.</div>
+                  </div>
+                  <p>Бесплатная доставка  <br /> на сумму от 1500 грн.</p>
+                  <a href="checkout.html" class="black-btn flex">
+                    <span>Оформить заказ</span>
+                    <img class="status" src="images/arrow.png" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="page flex checkout">
+        <div class="form">
+          <h1>Оформление заказа</h1>
+          <form action="" method="post">
+            <h2>Контактные данные</h2>
+            <div class="contact-details">
+              <div class="flex text">
+                <label for="name">Имя получателя</label>
+                <input
+                  id="name"
+                  type="text"
+                  name="name"
+                  placeholder="Романчук Сергей"
+                  required
+                />
+              </div>
+              <div class="flex text">
+                <label for="phone">Номер телефона получателя</label>
+                <input
+                  id="phone"
+                  type="tel"
+                  name="phone"
+                  placeholder="+380ХХХХХХХХХ"
+                  pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
+                />
+                <span class="form__error"
+                  >Это поле должно содержать телефон в формате
+                  +380ХХХХХХХХХ</span
+                >
+              </div>
+              <div class="flex text">
+                <label for="email">Ваш email</label>
+                <input
+                  id="email"
+                  type="email"
+                  name="email"
+                  placeholder="example@gmail.com"
+                  pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+                />
+                <span class="form__error"
+                  >Это поле должно содержать E-Mail в формате
+                  example@gmail.com</span
+                >
+              </div>
+            </div>
+            <div class="delivery">
+              <h2>Доставка</h2>
+              <div class="flex radio">
+                <div>
+                  <input
+                    id="pickup"
+                    type="radio"
+                    name="del"
+                    data-placeholder="город Киев, отделение №1"
+                    checked
+                  />
+                  <label for="pickup">Самовывоз из Новой почты</label>
+                </div>
+                <div>
+                  <input
+                    id="courier"
+                    type="radio"
+                    name="del"
+                    data-placeholder="г. Киев, улица Крещатик 1."
+                  />
+                  <label for="courier">Курьер Новая почта</label>
+                </div>
+              </div>
+              <div class="flex text">
+                <label for="city-number"
+                  >Город и номер отделения Новой почты</label
+                >
+                <input id="city-number" type="text" name="city-number" placeholder="город Киев, отделение №1"/>
+              </div>
+            </div>
+            <div class="payment">
+              <h2>Оплата</h2>
+              <div class="flex radio">
+                <div>
+                  <input id="receipt" type="radio" name="pay" checked />
+                  <label for="receipt">Оплата при получении</label>
+                </div>
+                <div>
+                  <input id="card" type="radio" name="pay" />
+                  <label for="card">Оплата картой Visa / Mastercard</label>
+                </div>
+              </div>
+              <div class="flex text">
+                <label for="comment"
+                  >Комментарий к заказу <span>(не обязательно)</span></label
+                >
+                <input
+                  id="comment"
+                  type="text"
+                  name="comment"
+                  placeholder="Хотите сообщить что-то ещё?"
+                />
+              </div>
+            </div>
+            <button id="send" class="black-btn flex" type="button" onclick="">
+              <span>Оформить заказ</span>
+              <img class="status" src="images/arrow.png" />
+            </button>
+          </form>
+        </div>
+        <div class="items-res">
+          <h2>Корзина</h2>
+          <div class="items">
+            <div class="item flex">
+              <div class="left flex">
+                <img src="images/item-2.png" />
+              </div>
+              <div class="right">
+                <h3>Электронная сигарета Joyetech VAAL 1500 Puffs 5%</h3>
+                <div class="taste-count">Малина, 1 шт.</div>
+                <div class="price">230 грн.</div>
+              </div>
+            </div>
+            <div class="item flex">
+              <div class="left flex">
+                <img src="images/item-3.png" />
+              </div>
+              <div class="right">
+                <h3>Электронная сигарета Puff Bar Plus Disposable</h3>
+                <div class="taste-count">Банан, 1 шт.</div>
+                <div class="price">549 грн.</div>
+              </div>
+            </div>
+          </div>
+          <div class="total flex">
+            <h3>Итого:</h3>
+            <div class="price">779 грн.</div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="page flex">
+        <a href="#" class="top"></a>
+        <ul class="bottom-menu flex">
+          <li><a href="index.html#why-us" class="navigate">Почему мы</a></li>
+          <li><a href="index.html#goods" class="navigate">Товары</a></li>
+          <li>
+            <a href="index.html#ask-a-question" class="navigate"
+              >Задать вопрос</a
+            >
+          </li>
+        </ul>
+        <div class="logo">
+          <a href="index.html" class="flex">
+            <span class="title">SSL-DROP</span>
+            <span class="subtitle">Лучшая партнерская сеть в Украине</span>
+          </a>
+        </div>
+        <div class="write-to-us flex">
+          <span>Пишите нам:</span>
+          <a href="#" class="vb flex"><img src="images/vb-ico.png" /></a>
+          <a href="#" class="tg flex"><img src="images/tg-ico.png" /></a>
+        </div>
+      </div>
+    </footer>
+    <script>
+      $(document).ready(function () {
+        $("a.navigate").on("click", function (e) {
+          var anchor = $(this);
+          $("html, body")
+            .stop()
+            .animate(
+              {
+                scrollTop: $(anchor.attr("href")).offset().top,
+              },
+              777
+            );
+          e.preventDefault();
+          return false;
+        });
+
+        var btn = $(".top");
+
+        btn.on("click", function (e) {
+          e.preventDefault();
+          $("html, body").animate({ scrollTop: 0 }, "300");
+        });
+
+        $(".cart").click(function () {
+          $(".cart-block").show();
+          $("body").css({ "overflow-y": "hidden" });
+          return false;
+        });
+
+        $(".close").click(function () {
+          $(".cart-block").hide();
+          $("body").css({ "overflow-y": "visible" });
+          return false;
+        });
+
+        $(".bg-close").click(function () {
+          $(".cart-block").hide();
+          $("body").css({ "overflow-y": "visible" });
+          return false;
+        });
+
+        $("#view-items").click(function () {
+          $(".cart-block").hide();
+          $("body").css({ "overflow-y": "visible" });
+          return false;
+        });
+      });
+
+      function catalogItemCounter(field) {
+        var fieldCount = function (el) {
+          var min = el.data("min") || false,
+            max = el.data("max") || false,
+            dec = el.prev(".dec"),
+            inc = el.next(".inc");
+
+          function init(el) {
+            if (!el.attr("disabled")) {
+              dec.on("click", decrement);
+              inc.on("click", increment);
+            }
+
+            function decrement() {
+              var value = parseInt(el[0].value);
+              value--;
+
+              if (!min || value >= min) {
+                el[0].value = value;
+              }
+            }
+
+            function increment() {
+              var value = parseInt(el[0].value);
+
+              value++;
+
+              if (!max || value <= max) {
+                el[0].value = value++;
+              }
+            }
+          }
+
+          el.each(function () {
+            init($(this));
+          });
+        };
+
+        $(field).each(function () {
+          fieldCount($(this));
+        });
+      }
+
+      catalogItemCounter(".fieldCount");
+    </script>
+
+    <script>
+      document
+        .querySelector(".delivery")
+        .addEventListener("change", function ({ target: t }) {
+          if (t.type === "radio") {
+            this.querySelector('input[type="text"]').placeholder =
+              t.dataset.placeholder;
+          }
+        });
+    </script>
+  </body>
+</html>
